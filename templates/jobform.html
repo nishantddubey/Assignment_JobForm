@@ -1,0 +1,217 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>job form</title>
+	<link rel="stylesheet" href="{% static 'css/jobform.css' %}">
+</head>
+<body>
+	 <!-- heading -->
+	<h2>Online Job Application Form</h2>
+	<!-- fieldset1 personal information Section-->
+	<fieldset >
+		<legend >
+			<td>personal information</td>
+		</legend>
+		<table>
+			<tr>
+				<td>First Name</td>
+				<td ><input type="text"></td>
+				<td>Middle Name</td>
+				<td><input type="text"></td>
+				<td>Last Name</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Father's Name</td>
+				<td><input type="text"></td>
+				<td>Mother's Name</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Current Address</td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td>Permanent Address</td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+			</tr>
+			<tr><td colspan="4" id="contact">Contact Details</td></tr>
+			<tr>
+				<td>Landline Number</td>
+				<td><input type="text"></td>
+				<td>Mobile Number</td>
+				<td><input type="text"></td>
+				<td>Email</td>
+				<td><input type="Email" ></td>
+			</tr>
+			<tr>
+				<td>Date Of Birth</td>
+				<td><input type="Date"></td>
+				<td>Place of Birth</td>
+				<td> <input type="text"> </td>
+			</tr>
+			<tr>
+				<td>Select Gender</td>
+				<td>
+					<input type="radio" name="gender" class="tick">Male
+				</td>
+				<td>
+					<input type="radio" name="gender" class="tick">Female 
+				</td>
+			</tr>
+			<tr>
+				<td>Highest Qualification</td>
+				<td><input type="text"></td>
+				<td>Year Of Passing</td>
+				<td><input type="month"></td>
+			</tr>
+			<tr>
+				<td>Language known</td>
+				<td> <input type="checkbox" class="tick">Hindi</td>
+				<td><input type="checkbox" class="tick">Telugu</td>
+				<td><input type="checkbox" class="tick">English</td>
+			</tr>
+			<tr>
+				<td>Select Your Hobbies</td>
+				<td> <input type="checkbox" class="tick">Coding</td>
+				<td><input type="checkbox" class="tick">Sleeping</t>
+				<td><input type="checkbox" class="tick">Playing</td>
+			</tr>
+			<tr>
+				<td>About Yourself </td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+			</tr>
+			<tr>
+				<td>Nationality</td>
+				<td><select> 
+					<option>Select country</option>
+					<option>Indian</option>
+					<option>American</option>
+					<option>Others</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Aadhar Card Number</td>
+				<td> <input type="number"></td>
+				<td>Pan Card Number</td>
+				<td> <input type="text"></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset >
+		<!-- Qualification details section -->
+		<legend >Education Details</legend>
+		<table>
+			<tr>
+				<th>SNo</th>
+				<th >Qualification</th>
+				<th >Institute/University</th>
+				<th >Year of Passing</th>
+				<th >Marks(%)</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td colspan=""><input type="text"></td>
+				<td colspan=""><input type="text"></td>
+				<td colspan=""><input type="month" ></td>
+				<td colspan=""><input type="number" ></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><input type="month" ></td>
+				<td><input type="number" > </td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><input type="month" ></td>
+				<td><input type="number" ></td>
+			</tr>
+		</table>
+	</fieldset>
+		<!-- work experience area -->
+	<fieldset >
+		<legend >Work Experience</legend>
+		<table>
+			<tr>
+			<th>SNo</th>
+			<th>Company</th>
+			<th>Work/Role</th>
+			<th>From Date</th>
+			<th>To Date</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td><input type="month"></td>
+				<td><input type="month"></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td><input type="month"></td>
+				<td><input type="month"></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td><textarea rows="3" cols="21"> </textarea></td>
+				<td><input type="month"></td>
+				<td><input type="month"></td>
+			</tr>
+		</table>
+	</fieldset>
+		<!-- Other details area -->
+	<fieldset >
+		<legend >Other Details</legend>
+		<table>
+			<tr>
+				<td>Job Type</td>
+				<td> 
+					<input type="radio" name="job" class="tick">
+					<label>Permanent</label>
+				</td>
+				<td>
+					<input type="radio" name="job" class="tick">
+					<label>Contract</label>
+				</td>
+				<td>
+					<input type="radio" name="job" class="tick">
+					<label>Other</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Date of Joining</td>
+				<td> <input type="Date"></td>
+				<td>Time of Joining</td>
+				<td><input type="Time"></td>
+			</tr>
+			<tr>
+				<td> preferred Job location</td>
+				<td> <input type="radio" name="loc" class="tick">Banglore </td>
+				<td> <input type="radio" name="loc" class="tick">Hyderabad </td>
+				<td> <input type="radio" name="loc" class="tick">Other </td>
+			</tr>
+			<tr>
+				<td>Willing to Relocate to Hyderabad</td>
+				<td> <input type="radio" name="Relocate" class="tick"> Yes</td>
+				<td> <input type="radio" name="Relocate" class="tick"> No</td>
+			</tr>
+				<tr >
+				<td colspan="3"><input type="checkbox" class="tick"> I am here declaring that all the above mentioned information is true as per my Knowledge.
+				</td>
+				</tr>
+				<tr>
+					<td colspan="1"></td>
+					<td colspan="1"> <input type="submit" class="button" id="submit"></td>
+					<td> <input type="reset" class="button" id="reset"></td>
+				</tr>
+		</table>
+	</fieldset>
+</body>
+</html>
